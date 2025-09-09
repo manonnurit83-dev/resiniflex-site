@@ -25,7 +25,7 @@ export const SITE_CONTENT = {
       { city: "Clermont-Ferrand", surface: 32, teinte: "Sable", granulometrie: "—" },
     ],
     moquette: [
-      { city: "Marseille", surface: 44, teinte: "Botticino", granulometrie: "2–5 mm" },
+      { img city: "Marseille", surface: 44, teinte: "Botticino", granulometrie: "2–5 mm" },
       { city: "Toulon", surface: 39, teinte: "Corail", granulometrie: "2–4 mm" },
       { city: "Montélimar", surface: 52, teinte: "Bianco Verona", granulometrie: "3–6 mm" },
       { city: "Annecy", surface: 41, teinte: "Gris Perle", granulometrie: "2–4 mm" },
