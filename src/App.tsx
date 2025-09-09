@@ -374,8 +374,14 @@ function InspirationPage() {
 
 function renderCaption(
   sectionTitle: string,
-  item: GalleryItem { city: string; surface: number; teinte: string; granulometrie: string },img: string; 
-) {
+  item:type GalleryItem = {
+  city: string;
+  surface: number;
+  teinte: string;
+  granulometrie: string;
+  img?: string; // <-- nouvel attribut (optionnel)
+};
+
   const heading = `${sectionTitle} — ${item.city}, ${item.surface} m²`;
   const lines = [
     `Teinte : ${item.teinte} · Granulométrie : ${item.granulometrie}.`,
