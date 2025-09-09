@@ -372,9 +372,7 @@ function InspirationPage() {
   );
 }
 
-function renderCaption(
-  sectionTitle: string,
-  item:type GalleryItem = {
+function renderCaption(sectionTitle: string, item: GalleryItem) {
   city: string;
   surface: number;
   teinte: string;
