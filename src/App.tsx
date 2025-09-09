@@ -405,20 +405,18 @@ function GallerySection({
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
         {items.map((item, i) => {
           const { heading, text } = renderCaption(title, item);
-          return (
-            <div key={i} className="rounded-2xl border bg-white overflow-hidden">
-              <div className="aspect-[4/3] bg-gray-100 grid place-content-center text-sm text-gray-500">Photo {i + 1}</div>
-              <div className="p-3 text-xs">
-                <div className="font-medium">{heading}</div>
-                <p className="text-gray-600 mt-1 leading-relaxed">{text}</p>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </section>
-  );
-}
+          return {item.img ? (
+  <img
+    src={item.img}
+    alt={`${heading} — ${item.teinte} ${item.granulometrie}`}
+    className="w-full aspect-[4/3] object-cover"
+  />
+) : (
+  <div className="aspect-[4/3] bg-gray-100 grid place-content-center text-sm text-gray-500">
+    Photo {i + 1}
+  </div>
+)}
+
 
 function AdminPage() {
   const { inventory, setStock, setStocksBulk } = useStore();
