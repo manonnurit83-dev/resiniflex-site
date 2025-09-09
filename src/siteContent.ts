@@ -1,7 +1,7 @@
 export const SITE_CONTENT = {
   galleries: {
     piscine: [
-      { city: "Nice", surface: 36, teinte: "Gris Clair", granulometrie: "2–4 mm" },
+      { city: "Saint-Brieuc", surface: 36, teinte: "Gris Clair", granulometrie: "2–4 mm" },
       { city: "Aix-en-Provence", surface: 48, teinte: "Botticino", granulometrie: "2–5 mm" },
       { city: "Biarritz", surface: 52, teinte: "Corail", granulometrie: "3–6 mm" },
       { city: "Montpellier", surface: 40, teinte: "Carrare", granulometrie: "2–4 mm" },
