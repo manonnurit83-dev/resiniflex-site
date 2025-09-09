@@ -374,7 +374,7 @@ function InspirationPage() {
 
 function renderCaption(
   sectionTitle: string,
-  item: { city: string; surface: number; teinte: string; granulometrie: string },
+  item: GalleryItem { city: string; surface: number; teinte: string; granulometrie: string },img: string; 
 ) {
   const heading = `${sectionTitle} — ${item.city}, ${item.surface} m²`;
   const lines = [
@@ -392,7 +392,7 @@ function GallerySection({
 }: {
   title: string;
   subtitle?: string;
-  items: { city: string; surface: number; teinte: string; granulometrie: string }[];
+  items: GalleryItem[];{ city: string; surface: number; teinte: string; granulometrie: string }[];
 }) {
   return (
     <section className="mt-8">
