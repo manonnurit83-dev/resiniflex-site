@@ -377,7 +377,7 @@ function renderCaption(sectionTitle: string, item: GalleryItem) {
   surface: number;
   teinte: string;
   granulometrie: string;
-  img?: string; // <-- nouvel attribut (optionnel)
+  img: string; // <-- nouvel attribut (optionnel)
 };
 
   const heading = `${sectionTitle} — ${item.city}, ${item.surface} m²`;
