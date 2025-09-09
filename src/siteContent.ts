@@ -25,7 +25,23 @@ export const SITE_CONTENT = {
       { city: "Clermont-Ferrand", surface: 32, teinte: "Sable", granulometrie: "—" },
     ],
     moquette: [
-      { export const SITE_CONTENT = {
+      {export const SITE_CONTENT = {
+  galleries: {
+    // ...
+    moquette: [
+      {
+        city: "Plérin",
+        surface: 44,
+        teinte: "Botticino",        // remplace par ta teinte réelle
+        granulometrie: "2–5 mm",    // remplace par ta granulométrie
+        img: "/images/moquette-de-pierre-plerin.jpg" // <— ton fichier
+      },
+      // ... (les autres items peuvent rester tels quels)
+    ],
+  },
+  // ...
+} as const;
+
   galleries: {
     // ...
     moquette: [
