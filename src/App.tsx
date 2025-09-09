@@ -395,7 +395,7 @@ function GallerySection({
   items,
 }: {
   title: string;
-  subtitle?: string;
+  subtitle: string;
   items: GalleryItem[]; // <-- ici
 }) {
   return (
@@ -406,7 +406,7 @@ function GallerySection({
           const { heading, text } = renderCaption(title, item);
           return (
             <div key={i} className="rounded-2xl border bg-white overflow-hidden">
-              {item.img ? (
+              {item.img  (
                 <img
                   src={item.img}
                   alt={`${heading} — ${item.teinte} ${item.granulometrie}`}
